@@ -1,0 +1,40 @@
+.cell{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    background:transparent;
+    font: inherit;
+    text-align: center;
+}
+.cell:disabled{
+    color: black;
+}
+
+table{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 6px;
+}
+
+@media print {
+    button{
+        display: none;
+    }
+    body{
+        margin-top: 20Px;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td, th{
+        border: 1Px solid black;
+        padding: 6px;
+        text-align: center;
+    }
+}
